@@ -217,7 +217,7 @@ def main():
                 # push image to web store
                 client = Client("A5xYmgW3QRTSLGbWotlWVz")
                 params = {"mimetype": "image/png"}
-                filePath = '/home/pi/'+ fileName
+                filePath = '/home/pi/.virtualenvs/cv/'+ fileName
                 new_filelink = client.upload(filepath=filePath, store_params=params)  
                 #new_filelink =  "https://cdn.filestackcontent.com/mV8ZhaR4Rlm3N2wE38gn" # uncomment for testing
                 # print URL
